@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1638387266 source:/home/pocho/Git/Oasis/docs/Sensors/main.cpp
+	<iostream>
+	"Sensor.h"
+	"Humidity_Sensor.h"
+
+1638387506 /home/pocho/Git/Oasis/docs/Sensors/Sensor.h
+
+1638387570 /home/pocho/Git/Oasis/docs/Sensors/Humidity_Sensor.h
+	"Sensor.h"
+
