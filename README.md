@@ -1,5 +1,11 @@
 # Oasis
 
+
+## Tabla de contenidos
+- [Fases](#fases) 
+- [Team](#team) 
+
+
 ## Fases
 ### Fase 1 
 - Elección  de Hardware:
@@ -39,3 +45,10 @@
 
 ### Fututos proyectos a partir del huerto
 - Sistema de recolección 
+
+
+## Team 
+- Oscar Martinez      ~ [OscarMrZ](https://github.com/OscarMrZ)
+- Adrian Medinabeitia ~ [roninAd](https://github.com/roninAd)
+- Iván Porras         ~ [Ivan-Porras](https://github.com/Ivan-Porras)
+- Guillermo Alcocer   ~ [GuilleAQ](https://github.com/GuilleAQ)
