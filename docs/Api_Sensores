@@ -1,0 +1,27 @@
+class Sensor_[TipoSensor]{
+
+	public: 
+
+	//~Inicializadores
+	Sensor_[TipoSensor](void); 
+	Sensor_[TipoSensor](int num_parcela); 
+	Sensor_[TipoSensor](Sensor_[TipoSensor] sensor); 
+
+	//~Funciones Basicas 
+	// Mide nuevo valor y actualiza varible de instancia valor_medido y contador
+	void actualizar_valor();  
+	void reset_contador(); 
+	
+	//~Getters
+	float get_valor(); 
+	int get_contador(); 
+	int get_ident_parcela(); 
+
+	private:
+ 
+	float valor_medido = 0; 
+	int contador = 0; // Valores medidos desde arranque  
+	int identificador_parcela = 0;  // Numero de la parcela en la que se encuentra
+	
+	static const int MAX_PARCELAS = 4; // Para tratar errores 
+}
