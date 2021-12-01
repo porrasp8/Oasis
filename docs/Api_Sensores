@@ -1,27 +1,48 @@
-class Sensor_[TipoSensor]{
+
+// De esta clase herdaria cada sensor 
+
+class Sensor{
 
 	public: 
 
 	//~Inicializadores
-	Sensor_[TipoSensor](void); 
-	Sensor_[TipoSensor](int num_parcela); 
-	Sensor_[TipoSensor](Sensor_[TipoSensor] sensor); 
+	Sensor(void); 
+	Sensor(int num_parcela); 
+	Sensor(Sensor sensor); 
 
 	//~Funciones Basicas 
 	// Mide nuevo valor y actualiza varible de instancia valor_medido y contador
-	void actualizar_valor();  
-	void reset_contador(); 
+	void actualizar_valor(int new_value);  
+	void reset_contador(){contador = 0;}
 	
 	//~Getters
-	float get_valor(); 
-	int get_contador(); 
-	int get_ident_parcela(); 
+	float get_valor(){return valor_medido;} 
+	int get_contador(){return contador;}
+	int get_ident_parcela(){return identificador_parcela;} 
 
-	private:
+	private: // O protected segun preferencia
  
 	float valor_medido = 0; 
 	int contador = 0; // Valores medidos desde arranque  
 	int identificador_parcela = 0;  // Numero de la parcela en la que se encuentra
+	bool estado = True; // True --> endendido, False --> apagado 
 	
 	static const int MAX_PARCELAS = 4; // Para tratar errores 
 }
+
+class Humedad: public Sensor{
+	
+	
+	public: 
+	// Toma el valor utilizando el sensor y lo pasa como parametro al metodo
+	//  actualizar_valor(valor);
+	void obtener_valor();
+	  
+
+	
+	private: 
+
+}
+
+
+
