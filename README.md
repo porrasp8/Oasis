@@ -1,54 +1,53 @@
 # Oasis
 
-
-## Tabla de contenidos
-- [Fases](#fases) 
+## Table of contents
+- [Phases](#phases) 
 - [Team](#team) 
 
 
-## Fases
-### Fase 1 
-- Elección  de Hardware:
+## Phases
+### Phase 1 
+- Choice of Hardware:
   1. Esp32
    
-- Sensores:
-  1. Humedad aire/tierra
-  2. Temperatura
-  3. PH de la tierra
-  4. Calidad del aire
+- Sensors:
+  1. Air/ground humidity
+  2. Temperature
+  3. Soil PH
+  4. Air quality
  
- - Interfaz:
-  1. Base de datos
-  2. Conexión directa Raspberry
-  3. Base de datos: txt
+ - Interface:
+  1. Database
+  2. Raspberry direct connection
+  3. Database: txt
   
- - Lenguaje: C++
- - Plantear macetero
+ - Language: C++
+ - Plant pot
  - APIs
  
- ### Fase 2:
-  1. Dos plantas, ayuda dde estudiantes de biología de Mostoles
-  2. Riego automático (Sistema: goteo) PENSAR MECANISMO
-  3. Interfaz: Server central
+ ### Phase 2:
+  1. Two plants, help from biology students from Mostoles.
+  2. Automatic irrigation (System: drip) THINK MECHANISM
+  3. Interface: Central Server
  
- ### Fase 3:
-  1. Fabricación de estrucutra (Si hay terreno) 
-  2. Abono automático
-  3. Control ambiental
-  4. Interfaz gráfica (GUI, panel de control)
-  5. Hardware adaptado
+ ### Phase 3:
+  1. Fabrication of structure (If there is land)
+  2. Automatic fertilizer
+  3. Environmental control
+  4. Graphic interface (GUI, control panel)
+  5. Adapted hardware
 
-### Fase 4:
- 1. Analisis energético
- 2. Sistemas minimizar consumo (Agua, electricidad)
+### Phase 4:
+ 1. Energy analysis
+ 2. Systems to minimize consumption (Water, electricity)
  3. Nfts 
 
-### Fututos proyectos a partir del huerto
-- Sistema de recolección 
+### Future projects based
+- Harvesting system 
 
 
 ## Team 
-- Oscar Martinez      ~ [OscarMrZ](https://github.com/OscarMrZ)
+- Oscar Martinez ~ [OscarMrZ](https://github.com/OscarMrZ)
 - Adrian Medinabeitia ~ [roninAd](https://github.com/roninAd)
-- Iván Porras         ~ [Ivan-Porras](https://github.com/Ivan-Porras)
-- Guillermo Alcocer   ~ [GuilleAQ](https://github.com/GuilleAQ)
+- Ivan Porras ~ [Ivan-Porras](https://github.com/Ivan-Porras)
+- Guillermo Alcocer ~ [GuilleAQ](https://github.com/GuilleAQ)
