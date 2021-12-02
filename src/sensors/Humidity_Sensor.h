@@ -4,20 +4,18 @@
 #include "Sensor.h"
 
 
-class Humidity_Sensor: public Sensor{
-
-
+class Humidity_Sensor:public Sensor{
 
 	public:
 
+        //~Constructor
 		Humidity_Sensor(int plot_num): Sensor(plot_num){}
 
-		// Toma el valor utilizando el sensor y lo pasa como parametro al metodo
-		//  update_value(valor);
-		void obtain_value(){update_value(5.0);} // Test
+        // update_value() implementation
+		virtual void update_value() { set_value(3); increment_cont(); }
 
+    private: // Add pinout
 
-	private:
 
 };
 

@@ -9,3 +9,13 @@
 1638387570 /home/pocho/Git/Oasis/docs/Sensors/Humidity_Sensor.h
 	"Sensor.h"
 
+1638443281 source:/home/alumnos/oscarmz/Oasis/src/sensors/no_interface/main.cpp
+	<iostream>
+	"Sensor.h"
+	"Humidity_Sensor.h"
+
+1638443671 /home/alumnos/oscarmz/Oasis/src/sensors/no_interface/Sensor.h
+
+1638443695 /home/alumnos/oscarmz/Oasis/src/sensors/no_interface/Humidity_Sensor.h
+	"Sensor.h"
+
