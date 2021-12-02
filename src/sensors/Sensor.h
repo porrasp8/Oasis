@@ -15,23 +15,22 @@ class Sensor{
 		void reset_cont(){ cont = 0; }
 		void increment_cont() { cont++; }
 
-		//~Setters
-		void set_value(float newvalue) { value = newvalue; }
-
 		//~Getters
 		float get_value(){ return value; }
 		int get_cont(){ return cont; }
 		int get_plot_ident(){ return plot_ident; }
 
-
-    protected:
-        // Al sensors have to implement this function
+	protected:
+        	// Al sensors have to implement this function
 		virtual void update_value() = 0;
+	
+		//~Setters
+		void set_value(float newvalue) { value = newvalue; }
 
 	private:
-        float value = 0; // Current measured value
+        	float value = 0; // Current measured value
 		double cont = 0; // Measured values after start
-        int plot_ident = 0;  // Number of plot
+       		int plot_ident = 0;  // Number of plot
 		bool state = true; // true --> on, False --> off
 };
 
