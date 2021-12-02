@@ -9,29 +9,30 @@ class Sensor{
 
 		//~Constructors
 		Sensor(void);
-		Sensor(int plot_num){plot_ident = plot_num;}
-		//Sensor(Sensor sensor);
+		Sensor(int plot_num){ plot_ident = plot_num; }
 
 		//~Basics functions
-		void reset_cont(){cont = 0;}
+		void reset_cont(){ cont = 0; }
+		void increment_cont() { cont++; }
+
+		//~Setters
+		void set_value(float newvalue) { value = newvalue; }
 
 		//~Getters
-		float get_value(){return value;} // Faltaria aumentar contador
-		int get_cont(){return cont;}
-		int get_plot_ident(){return plot_ident;}
+		float get_value(){ return value; }
+		int get_cont(){ return cont; }
+		int get_plot_ident(){ return plot_ident; }
 
-	protected:
 
-		void update_value(int new_value){value = new_value;}
+    protected:
+        // Al sensors have to implement this function
+		virtual void update_value() = 0;
 
-	private: // Or protected(not decided yet)
-
-		float value = 0; // Curren measured value
-		int cont = 0; // Measured values after start
+	private:
+        float value = 0; // Current measured value
+		double cont = 0; // Measured values after start
         int plot_ident = 0;  // Number of plot
 		bool state = true; // true --> on, False --> off
-
-		static const int MAX_PLOTS = 4; // For error treatment
 };
 
 #endif
