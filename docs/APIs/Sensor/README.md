@@ -50,15 +50,15 @@ All of the variables are privated and only can be modified with thw setters and 
 
 **Getters**
 ---------------------------------------------------------------------------------------------------------------------------
-float get_value(): Returns the last measured value @ params: void 
+- float get_value(): Returns the last measured value @ params: void 
   @ params: void 
   @ return: value(float) 
 ---------------------------------------------------------------------------------------------------------------------------
-get_cont(): Returns the number of measurements since the start 
+- get_cont(): Returns the number of measurements since the start 
   @ params: void 
   @ return: cont(int9 
 ---------------------------------------------------------------------------------------------------------------------------
-get_plot_ident(): Returns the plot number 
+- get_plot_ident(): Returns the plot number 
   @ params: void 
   @ return: plot_ident(int) 
 ---------------------------------------------------------------------------------------------------------------------------
