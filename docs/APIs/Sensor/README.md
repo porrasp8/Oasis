@@ -39,27 +39,37 @@ All of the variables are privated and only can be modified with thw setters and 
 **Basic Methods**
 ---------------------------------------------------------------------------------------------------------------------------
 - reset_cont(): Reset the sensor contador
+
   @ params: void 
+  
   @ return: void 
 ---------------------------------------------------------------------------------------------------------------------------
 - increment_cont(): Add one to the contador value 
+
   @ params: void 
+  
   @ return: void 
 ---------------------------------------------------------------------------------------------------------------------------
 
 
 **Getters**
 ---------------------------------------------------------------------------------------------------------------------------
-- float get_value(): Returns the last measured value @ params: void 
+- float get_value(): Returns the last measured value 
+
   @ params: void 
+  
   @ return: value(float) 
 ---------------------------------------------------------------------------------------------------------------------------
 - get_cont(): Returns the number of measurements since the start 
+
   @ params: void 
+  
   @ return: cont(int9 
 ---------------------------------------------------------------------------------------------------------------------------
 - get_plot_ident(): Returns the plot number 
+
   @ params: void 
+  
   @ return: plot_ident(int) 
 ---------------------------------------------------------------------------------------------------------------------------
 
@@ -68,14 +78,18 @@ All of the variables are privated and only can be modified with thw setters and 
 **Basic Virtual Methods**
 ---------------------------------------------------------------------------------------------------------------------------
 - update_value(): Virtaul method used to measured the sensor value 
+
   @ params: 
+  
   @ return: 
 ---------------------------------------------------------------------------------------------------------------------------
 
 **Setters**
 ---------------------------------------------------------------------------------------------------------------------------
 - set_value(): Set the new measured value 
+
   @ params: newvalue(float) 
+  
   @ return: void
 ---------------------------------------------------------------------------------------------------------------------------
 
