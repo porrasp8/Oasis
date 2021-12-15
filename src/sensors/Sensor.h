@@ -1,3 +1,9 @@
+/**
+ * @file Sensor.h
+ * @brief Provides simple methods and variables for a sensor object that inherits from it 
+ * @date 03/12/2021
+ */
+
 #ifndef SENSOR_H_INCLUDED
 #define SENSOR_H_INCLUDED
 
@@ -31,7 +37,7 @@ class Sensor{
         	float value = 0; // Current measured value
 		double cont = 0; // Measured values after start
        		int plot_ident = 0;  // Number of plot
-		bool state = true; // true --> on, False --> off
+		bool status = true; // true --> on, False --> off(Not implemented yet)
 };
 
 #endif
