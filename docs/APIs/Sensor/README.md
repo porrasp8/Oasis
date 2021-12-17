@@ -12,7 +12,7 @@ This class allows to create inherited sensors classes with a simple structure.
 
 ## Variables: 
 
-All of the variables are privated and only can be modified with thw setters and initial parametres.
+All of the variables are private and only can be modified with the setters and initial parametres.
 
 ---------------------------------------------------------------------------------------------------------------------------
 - value(float): Contains the current measured value
@@ -32,7 +32,7 @@ All of the variables are privated and only can be modified with thw setters and 
 ---------------------------------------------------------------------------------------------------------------------------
 - Sensor(void): Creates a Sensor with the default values 
 ---------------------------------------------------------------------------------------------------------------------------
-- Sensor(int plot_num): Creates a Sesnor with the plot number passed as parameter
+- Sensor(int plot_num): Creates a Sensor with the plot number passed as parameter
 ---------------------------------------------------------------------------------------------------------------------------
 
 
@@ -77,7 +77,7 @@ All of the variables are privated and only can be modified with thw setters and 
 
 **Basic Virtual Methods**
 ---------------------------------------------------------------------------------------------------------------------------
-- update_value(): Virtaul method used to measured the sensor value 
+- update_value(): Virtual method used to measure the sensor value 
 
   @ params: 
   
