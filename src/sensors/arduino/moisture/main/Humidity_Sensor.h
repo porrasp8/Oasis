@@ -1,7 +1,7 @@
 /**
  * @file Humidity_Sensor.h
- * @brief Example of an object that inherits from Sensor.h 
- * @date 03/12/2021
+ * @implementation of an object that inherits from Sensor.h 
+ * @date 23/12/2021
  */
 
 #ifndef SENSOR_HUMEDAD_H_INCLUDED
@@ -21,8 +21,7 @@ class Humidity_Sensor:public Sensor{
 		virtual void update_value();
 
     private: // Add pinout
-
-    int pin_in;  
+      int pin_in;  
 };
 
 

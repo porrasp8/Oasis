@@ -1,12 +1,11 @@
 #include "Sensor.h"
-#include "Humidity_Sensor.h"
+#include "Photoresistance.h"
 
   // Const 
-  const int PLOT_NUM = 1; 
+  const int PLOT_NUM = 2; 
   const int GPIO_IN = 0; 
 
-  int plot_num = 1;
-  Humidity_Sensor s1_humedity(PLOT_NUM, GPIO_IN);
+  Photoresistance s2_photores(PLOT_NUM, GPIO_IN);
 
 void setup() 
 {
@@ -16,9 +15,9 @@ void setup()
 void loop() 
 { 
 
-      s1_humedity.update_value();
+      s2_photores.update_value();
       Serial.println( "VALUE : ");
-      Serial.println(s1_humedity.get_value());
+      Serial.println(s2_photores.get_value());
    //   Serial.println( "CONT : ");
    //   Serial.println(s1_humedity.get_cont());
    //   Serial.println( "PLOT : ");
