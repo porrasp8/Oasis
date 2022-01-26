@@ -15,14 +15,16 @@ class Humidity_Sensor:public Sensor{
 	public:
 
         //~Constructor
-		Humidity_Sensor(int plot_num, int gpio_in): Sensor(plot_num){pin_in = gpio_in;}
+		Humidity_Sensor(int plot_num, int gpio_in, int gpio_out): Sensor(plot_num){pin_in = gpio_in; pin_out = gpio_out;}
 
         // update_value() implementation
-		virtual void update_value();
+		virtual void update_value() { set_value(3); increment_cont(); }
 
     private: // Add pinout
 
     int pin_in;  
+    int pin_out; // To control the status of the sensor(on//of), uneccesary in some cases 
+
 };
 
 
