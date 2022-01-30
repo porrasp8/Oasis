@@ -1,6 +1,6 @@
 /**
  * @file Sensor.h
- * @brief Provides simple methods and variables for a sensor object that inherits from it 
+ * @brief Provides simple methods and variables for a sensor object that inherits from it
  * @date 03/12/2021
  */
 
@@ -29,7 +29,7 @@ class Sensor{
 	protected:
         	// Al sensors have to implement this function
 		virtual void update_value() = 0;
-	
+
 		//~Setters
 		void set_value(float newvalue) { value = newvalue; }
 

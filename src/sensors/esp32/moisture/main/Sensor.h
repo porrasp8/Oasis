@@ -1,6 +1,6 @@
 /**
  * @file Sensor.h
- * @brief Provides simple methods and variables for a sensor object that inherits from it 
+ * @brief Provides simple methods and variables for a sensor object that inherits from it
  * @date 03/12/2021
  */
 
@@ -27,16 +27,16 @@ class Sensor{
 		int get_plot_ident(){ return plot_ident; }
 
 	protected:
-        	// Al sensors have to implement this function
+    // Al sensors have to implement this function
 		virtual void update_value() = 0;
-	
+
 		//~Setters
 		void set_value(float newvalue) { value = newvalue; }
 
 	private:
-        	float value = 0; // Current measured value
-		double cont = 0; // Measured values after start
-       		int plot_ident = 0;  // Number of plot
+    float value = 0; // Current measured value
+	  double cont = 0; // Measured values after start
+    int plot_ident = 0;  // Number of plot
 		bool status = true; // true --> on, False --> off(Not implemented yet)
 };
 

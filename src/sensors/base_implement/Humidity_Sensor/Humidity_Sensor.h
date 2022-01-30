@@ -1,6 +1,6 @@
 /**
  * @file Humidity_Sensor.h
- * @brief Example of an object that inherits from Sensor.h 
+ * @brief Example of an object that inherits from Sensor.h
  * @date 03/12/2021
  */
 
@@ -22,8 +22,8 @@ class Humidity_Sensor:public Sensor{
 
     private: // Add pinout
 
-    int pin_in;  
-    int pin_out; // To control the status of the sensor(on//of), uneccesary in some cases 
+    int pin_in;
+    int pin_out; // To control the status of the sensor(on//of), uneccesary in some cases
 
 };
 

@@ -1,6 +1,6 @@
 /**
  * @file Humidity_Sensor.cpp
- * @methods for de Humidity sensor 
+ * @methods for de Humidity sensor
  * @date 23/12/2021
  */
 
@@ -11,6 +11,6 @@
  void Humidity_Sensor::update_value(){
    // Values between 0 - 30
    int reading  = analogRead(pin_in);
-   set_value(reading/10); 
+   set_value(reading/10);
    increment_cont();
   }
