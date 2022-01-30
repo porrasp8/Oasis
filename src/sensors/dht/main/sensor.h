@@ -1,5 +1,5 @@
 /**
- * @file Sensor.h
+ * @file sensor.h
  * @brief Provides simple methods and variables for a sensor object that inherits from it
  * @date 03/12/2021
  */
@@ -9,10 +9,9 @@
 
 // From this class inherits each sensor
 
-class Sensor{
+class Sensor {
 
 	public:
-
 		//~Constructors
 		Sensor(void);
 		Sensor(int plot_num){ plot_ident = plot_num; }

@@ -1,17 +1,16 @@
 /**
- * @file Humidity_Sensor.cpp
- * @methods for de Humidity sensor
- * @date 23/12/2021
+ * @file dht.cpp
+ * @methods for a DHT11 sensor
+ * @date 30/01/2022
  */
-
-#include "Sensor.h"
-#include "dht.h"
+ 
 #include "Arduino.h"
+#include "dht.h"
 
 const int DHTLIB_ERROR_TIMEOUT = -1;
 const int DHTLIB_ERROR_CHECKSUM = -2;
 
-int dht::update_value()
+int DHT::update_value()
 {
   // BUFFER TO RECEIVE
   uint8_t bits[5];
@@ -68,7 +67,7 @@ int dht::update_value()
   uint8_t sum = bits[0] + bits[2];  
 
   if (bits[4] != sum) return DHT_BAD_CHECKSUM;
-  return 1;
+  return DHT_OK;
 }
 //
 // END OF FILE
