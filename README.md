@@ -51,3 +51,4 @@
 - Adrian Medinabeitia ~ [roninAd](https://github.com/roninAd)
 - Ivan Porras ~ [Ivan-Porras](https://github.com/Ivan-Porras)
 - Guillermo Alcocer ~ [GuilleAQ](https://github.com/GuilleAQ)
+- Juan Simó ~ [JSA02](https://github.com/JSA02)
