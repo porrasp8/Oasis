@@ -44,7 +44,7 @@
    
  **Basic funcitons**
  
-    		float get_hum();
+    	float get_hum();
     
    		float get_temp();
     
