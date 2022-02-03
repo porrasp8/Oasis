@@ -27,7 +27,7 @@ class Sensor {
 
 	protected:
     // Al sensors have to implement this function
-		virtual int update_value() = 0;
+		virtual void update_value() = 0;
 
 		//~Setters
 		void set_value(float newvalue) { value = newvalue; }
