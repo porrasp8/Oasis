@@ -23,6 +23,10 @@
   
  - Language: C++
  - Plant pot
+ - Soil
+ - Plant (cilantro)
+ - 1 pot greenhouse
+ - Fake natural light bulb
  - APIs
  
  ### Phase 2:
