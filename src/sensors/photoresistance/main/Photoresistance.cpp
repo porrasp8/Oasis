@@ -11,6 +11,6 @@
  void Photoresistance::update_value(){
    // Values between 0 - 100
    int reading  = analogRead(pin_in);
-   set_value(reading/10);
+   set_value(reading/10); 
    increment_cont();
   }
