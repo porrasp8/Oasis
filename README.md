@@ -6,33 +6,39 @@
 
 
 ## Phases
+
 ### Phase 1 
-- Choice of Hardware:
-  1. Esp32
+
+- Hardware:
+  * Esp32
    
 - Sensors:
-  1. Air/ground humidity
-  2. Temperature
-  3. Soil PH
-  4. Air quality
+
+  * Air/ground humidity
+  * Temperature
+  * Soil PH
+  * Air quality
  
  - Interface:
-  1. Database
-  2. Raspberry direct connection
-  3. Database: txt
+ 
+   * Database
+   * MQTT, ESP32 client --> RP4 server
   
  - Language: C++
- - Plant pot
- - Soil
- - Plant (cilantro)
- - 1 pot greenhouse
- - Fake natural light bulb
- - APIs
+ 
+ - Materials
+
+   * Plant pot
+   * Soil
+   * Plant (cilantro)
+   * One pot greenhouse model
+   * Artificial light
  
  ### Phase 2:
   1. Two plants, help from biology students from Mostoles.
-  2. Automatic irrigation (System: drip) THINK MECHANISM
-  3. Interface: Central Server
+  2. Study about hidroponics
+  3. Automatic irrigation (System: drip) THINK MECHANISM
+  4. Interface: Central Server
  
  ### Phase 3:
   1. Fabrication of structure (If there is land)
@@ -46,7 +52,7 @@
  2. Systems to minimize consumption (Water, electricity)
  3. Nfts 
 
-### Future projects based
+### Next steps
 - Harvesting system 
 
 
