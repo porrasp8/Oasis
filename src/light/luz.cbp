@@ -20,6 +20,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="luz.cpp" />
+		<Unit filename="luz.h" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>
