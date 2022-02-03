@@ -9,12 +9,11 @@
 
 #include "sensor.h"
 
-
 class DHT : public Sensor {
 
 	public:
     //~Constructor
-		DHT(int plot_num, int gpio_in): Sensor(plot_num) { pin = gpio_in; }
+		DHT(int plot_num, int gpio_in): Sensor(plot_num) { pin_in = gpio_in; }
 
     // update_value() implementation
 		virtual void update_value();
@@ -24,7 +23,7 @@ class DHT : public Sensor {
     float get_temp() { return temp; }
 
   private: // Add pinout
-    int pin;
+    int pin_in;
     float hum;
     float temp;
 };

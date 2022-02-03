@@ -7,10 +7,7 @@
 #include "Arduino.h"
 #include "dht.h"
 
-const int DHTLIB_ERROR_TIMEOUT = -1;
-const int DHTLIB_ERROR_CHECKSUM = -2;
-
-int DHT::update_value()
+void DHT::update_value()
 {
   // BUFFER TO RECEIVE
   uint8_t bits[5];
@@ -21,34 +18,34 @@ int DHT::update_value()
   for (int i=0; i< 5; i++) bits[i] = 0;
 
   // REQUEST SAMPLE
-  pinMode(pin, OUTPUT);
-  digitalWrite(pin, LOW);
+  pinMode(pin_in, OUTPUT);
+  digitalWrite(pin_in, LOW);
   delay(18);
-  digitalWrite(pin, HIGH);
+  digitalWrite(pin_in, HIGH);
   delayMicroseconds(40);
-  pinMode(pin, INPUT);
+  pinMode(pin_in, INPUT);
 
   // ACKNOWLEDGE or TIMEOUT
   unsigned int loopCnt = 10000;
-  while(digitalRead(pin) == LOW)
-    if (loopCnt-- == 0) return DHT_TIMEOUT;
+  while(digitalRead(pin_in) == LOW)
+    delayMicroseconds(1);
 
   loopCnt = 10000;
-  while(digitalRead(pin) == HIGH)
-    if (loopCnt-- == 0) return DHT_TIMEOUT;
+  while(digitalRead(pin_in) == HIGH)
+    delayMicroseconds(1);
 
   // READ OUTPUT - 40 BITS => 5 BYTES or TIMEOUT
   for (int i=0; i<40; i++)
   {
     loopCnt = 10000;
-    while(digitalRead(pin) == LOW)
-      if (loopCnt-- == 0) return DHT_TIMEOUT;
+    while(digitalRead(pin_in) == LOW)
+      delayMicroseconds(1);
 
     unsigned long t = micros();
 
     loopCnt = 10000;
-    while(digitalRead(pin) == HIGH)
-      if (loopCnt-- == 0) return DHT_TIMEOUT;
+    while(digitalRead(pin_in) == HIGH)
+      delayMicroseconds(1);
 
     if ((micros() - t) > 40) bits[idx] |= (1 << cnt);
     if (cnt == 0)   // next byte?
@@ -66,9 +63,5 @@ int DHT::update_value()
 
   uint8_t sum = bits[0] + bits[2];  
 
-  if (bits[4] != sum) return DHT_BAD_CHECKSUM;
-  return DHT_OK;
+  // if (bits[4] != sum) return DHT_BAD_CHECKSUM;
 }
-//
-// END OF FILE
-//
