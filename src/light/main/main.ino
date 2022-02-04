@@ -47,11 +47,11 @@ void loop()
 
   restart(); 
   
-  Serial.println("ON/ START/ 8 hours");
+  Serial.println("ON/ START/ 12 hours");
   light.set_status(ON); 
   mantein_status(on_time); 
 
-  Serial.println("OFF/ START/ 16 hours");
+  Serial.println("OFF/ START/ 12 hours");
   light.set_status(OFF); 
   mantein_status(off_time); 
 }
