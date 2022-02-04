@@ -23,3 +23,13 @@
 	<iostream>
 	"luz.h"
 
+1643970414 source:/home/pocho/Git/Oasis/src/light/main.cpp
+	<iostream>
+	"luz.h"
+
+1643970471 /home/pocho/Git/Oasis/src/light/luz.h
+	<ctime>
+
+1643970485 source:/home/pocho/Git/Oasis/src/light/luz.cpp
+	"luz.h"
+

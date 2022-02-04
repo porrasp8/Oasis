@@ -29,5 +29,5 @@ double Luz::get_time(){
 
     double time = (double)final_time / CLOCKS_PER_SEC;
 
-    return time;
+    return (time / MINUTOS);
 }

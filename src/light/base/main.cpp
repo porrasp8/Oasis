@@ -19,7 +19,7 @@ int main()
     cout << "STATUS: " << luz1.get_status() << endl;
     cout << "TIME: " << luz1.get_time() << endl;
 
-    while(luz1.get_time() < 10){}
+    while(luz1.get_time() < 0.16){}
     cout << "TIME: " << luz1.get_time() << endl;
 
     return 0;
