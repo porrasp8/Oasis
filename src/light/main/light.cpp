@@ -9,7 +9,6 @@ Light::Light(int plot_number, int gpio,bool init_status){
     status = init_status;
     last_switch_time = clock();
 
-
 }
 
 void Light::set_status(bool newstatus){
@@ -32,7 +31,7 @@ double Light::get_time(){
 
     double time = (double)final_time / CLOCKS_PER_SEC;
 
-    return (time / MINUTOS);
+    return (time / MINS);
 }
 
 void Light::switch_status(bool newstatus){

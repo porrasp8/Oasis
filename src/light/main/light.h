@@ -20,16 +20,16 @@ class Light{
         void set_status(bool newstatus);
 
 
-
     private:
 
         int plot_ident = 0; // Number of plot
         bool status;        // On/of status
         clock_t last_switch_time;  // Save the last switch time
-        const int MINUTOS = 60;
         int gpio_out; 
-
-        void switch_status(bool newstatus); 
+        
+        const int MINS = 60;
+        
+        void switch_status(bool newstatus); // Private function to switch the light 
 
 };
 
