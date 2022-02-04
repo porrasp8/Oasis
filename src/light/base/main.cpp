@@ -1,6 +1,5 @@
 #include <iostream>
 #include "luz.h"
-#include <unistd.h> // For sleep
 
 using namespace std;
 
@@ -19,7 +18,8 @@ int main()
     cout << "PLOT: " << luz1.get_plot_ident() << endl;
     cout << "STATUS: " << luz1.get_status() << endl;
     cout << "TIME: " << luz1.get_time() << endl;
-    usleep(TIME_TO_SLEEP * 1000000);
+
+    while(luz1.get_time() < 0.16){}
     cout << "TIME: " << luz1.get_time() << endl;
 
     return 0;
