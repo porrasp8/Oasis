@@ -18,7 +18,7 @@ void setup()
 
 // Recive time in minutes and matein the current status of 
 // the light 
-void mantein_status(float time){
+void mantein_status(double time){
   
   while(light.get_time() < time){
     // Debug messages
@@ -42,8 +42,8 @@ void restart(){
 void loop()
 {
 
-  int on_time = 12 * HOURS;
-  int off_time = 12 * HOURS;
+  double on_time = 12 * HOURS;
+  double off_time = 12 * HOURS;
 
   restart(); 
   
