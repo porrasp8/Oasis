@@ -2,13 +2,14 @@
 #include "Arduino.h"
 
 
-Light::Light(int plot_number, int gpio,bool init_status){
+Light::Light(int plot_number, int height,int gpio,bool init_status){
 
-    plot_ident = plot_number;
+    ident[0] = plot_number;
+    ident[1] = height;
+
     gpio_out = gpio; 
     status = init_status;
     last_switch_time = clock();
-
 }
 
 void Light::set_status(bool newstatus){

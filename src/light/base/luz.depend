@@ -33,3 +33,10 @@
 1643970485 source:/home/pocho/Git/Oasis/src/light/luz.cpp
 	"luz.h"
 
+1644490910 source:/home/alumnos/ivanp/Git/Oasis/src/light/base/main.cpp
+	<iostream>
+	"luz.h"
+
+1644490799 /home/alumnos/ivanp/Git/Oasis/src/light/base/luz.h
+	<ctime>
+

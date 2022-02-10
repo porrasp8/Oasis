@@ -2,13 +2,14 @@
 
 // Const
 const int PLOT_NUM = 1;
+const int HEIGHT = 1; 
 const int GPIO_IN = 4;
 const bool ON = true; 
 const bool OFF = false; 
 const int HOURS = 60; 
 const int RESTART_TICKS = 3; 
 
-Light light(PLOT_NUM, GPIO_IN);
+Light light(PLOT_NUM, HEIGHT, GPIO_IN);
  
 void setup()
 {
