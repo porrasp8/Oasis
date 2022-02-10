@@ -58,7 +58,7 @@
 
 ## Team 
 - Óscar Martínez ~ [OscarMrZ](https://github.com/OscarMrZ)
-- Adrían Madinabeitia ~ [roninAd](https://github.com/roninAd)
-- Iván Porras ~ [Ivan-Porras](https://github.com/Ivan-Porras)
+- Adrían Madinabeitia ~ [madport](https://github.com/roninAd)
+- Iván Porras ~ [porrasp8](https://github.com/Ivan-Porras)
 - Guillermo Alcocer ~ [GuilleAQ](https://github.com/GuilleAQ)
 - Juan Simó ~ [JSA02](https://github.com/JSA02)
