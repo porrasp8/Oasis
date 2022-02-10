@@ -1,15 +1,15 @@
-#ifndef LIGHT_H_INCLUDED
-#define LIGHT_H_INCLUDED
+#ifndef ACTUATOR_H_INCLUDED
+#define ACTUATOR_H_INCLUDED
 
 #include <ctime>
 
-class Light{
+class Actuator{
 
     public:
 
         //~ Constructors
-        Light(void);
-        Light(int plot_number, int height, int gpio,bool init_status = false);
+        Actuator(void);
+        Actuator(int plot_number, int height, int gpio,bool init_status = false);
 
         // Getters
         void get_ident(int identifier[]){identifier[0] = ident[0]; identifier[1] = ident[1];}
@@ -28,10 +28,9 @@ class Light{
         int gpio_out; 
         
         const int MINS = 60;
-        
         void switch_status(bool newstatus); // Private function to switch the light 
 
 };
 
 
-#endif // LIGHT_H_INCLUDED
+#endif // ACTUATOR_H_INCLUDED

@@ -1,8 +1,8 @@
-#include "light.h"
+#include "actuator.h"
 #include "Arduino.h"
 
 
-Light::Light(int plot_number, int height,int gpio,bool init_status){
+Actuator::Actuator(int plot_number, int height,int gpio,bool init_status){
 
     ident[0] = plot_number;
     ident[1] = height;
@@ -12,7 +12,7 @@ Light::Light(int plot_number, int height,int gpio,bool init_status){
     last_switch_time = clock();
 }
 
-void Light::set_status(bool newstatus){
+void Actuator::set_status(bool newstatus){
 
     // Switch off/on(new real status)
     if(status != newstatus){
@@ -23,7 +23,7 @@ void Light::set_status(bool newstatus){
     status = newstatus;
 }
 
-double Light::get_time(){
+double Actuator::get_time(){
 
     clock_t final_time;
 
@@ -35,7 +35,7 @@ double Light::get_time(){
     return (time / MINS);
 }
 
-void Light::switch_status(bool newstatus){
+void Actuator::switch_status(bool newstatus){
 
   if(newstatus){digitalWrite(gpio_out, HIGH);}
   else{digitalWrite(gpio_out, LOW);}

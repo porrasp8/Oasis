@@ -1,4 +1,4 @@
-#include "light.h"
+#include "actuator.h"
 
 // Const
 const int PLOT_NUM = 1;
@@ -9,7 +9,7 @@ const bool OFF = false;
 const int HOURS = 60; 
 const int RESTART_TICKS = 3; 
 
-Light light(PLOT_NUM, HEIGHT, GPIO_IN);
+Actuator light(PLOT_NUM, HEIGHT, GPIO_IN);
  
 void setup()
 {
