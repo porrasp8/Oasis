@@ -13,7 +13,7 @@ class Moisture_sensor:public Sensor{
 
 	public:
     //~Constructor
-		Moisture_sensor(int plot_num, int gpio_in): Sensor(plot_num) { pin_in = gpio_in; }
+		Moisture_sensor(int plot_num, int height ,int gpio_in): Sensor(plot_num, height) { pin_in = gpio_in; }
 
     // update_value() implementation
 		virtual void update_value();

@@ -4,9 +4,10 @@
 // Const
 const int PLOT_NUM = 1;
 const int GPIO_IN = 32;
+const int HEIGHT = 1; 
 
 int plot_num = 1;
-Moisture_sensor moisture1(PLOT_NUM, GPIO_IN);
+Moisture_sensor moisture1(PLOT_NUM, HEIGHT, GPIO_IN);
 
 void setup()
 {

@@ -15,7 +15,7 @@ class Photoresistance:public Sensor{
 	public:
 
     //~Constructor
-		Photoresistance(int plot_num, int gpio_in): Sensor(plot_num){pin_in = gpio_in;}
+		Photoresistance(int plot_num, int height, int gpio_in): Sensor(plot_num, height){pin_in = gpio_in;}
 
     // update_value() implementation
 		virtual void update_value();

@@ -3,9 +3,10 @@
 
   // Const 
   const int PLOT_NUM = 2; 
-  const int GPIO_IN = 0; 
+  const int GPIO_IN = 35; 
+  const int HEIGHT = 1; 
 
-  Photoresistance s2_photores(PLOT_NUM, GPIO_IN);
+  Photoresistance s2_photores(PLOT_NUM, HEIGHT, GPIO_IN);
 
 void setup() 
 {

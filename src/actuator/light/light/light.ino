@@ -1,14 +1,15 @@
-#include "light.h"
+#include "actuator.h"
 
 // Const
 const int PLOT_NUM = 1;
+const int HEIGHT = 1; 
 const int GPIO_IN = 4;
 const bool ON = true; 
 const bool OFF = false; 
 const int HOURS = 60; 
 const int RESTART_TICKS = 3; 
 
-Light light(PLOT_NUM, GPIO_IN);
+Actuator light(PLOT_NUM, HEIGHT, GPIO_IN);
  
 void setup()
 {
@@ -18,7 +19,7 @@ void setup()
 
 // Recive time in minutes and matein the current status of 
 // the light 
-void mantein_status(float time){
+void mantein_status(double time){
   
   while(light.get_time() < time){
     // Debug messages
@@ -42,8 +43,8 @@ void restart(){
 void loop()
 {
 
-  int on_time = 12 * HOURS;
-  int off_time = 12 * HOURS;
+  double on_time = 12 * HOURS;
+  double off_time = 12 * HOURS;
 
   restart(); 
   

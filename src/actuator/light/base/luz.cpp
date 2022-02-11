@@ -1,13 +1,12 @@
 #include "luz.h"
 
 
-Luz::Luz(int plot_number, bool init_status){
+Luz::Luz(int plot_number, int height, bool init_status){
 
-    plot_ident = plot_number;
+    ident[0] = plot_number;
+    ident[1] = height;
     status = init_status;
     last_switch_time = clock();
-
-
 }
 
 void Luz::set_status(bool newstatus){

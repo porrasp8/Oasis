@@ -9,10 +9,10 @@ class Luz{
 
         //~ Constructors
         Luz(void);
-        Luz(int plot_number, bool init_status = false);
+        Luz(int plot_number, int height, bool init_status = false);
 
         // Getters
-        int get_plot_ident(){ return plot_ident;}
+        void get_ident(int identifier[]){identifier[0] = ident[0]; identifier[1] = ident[1];}
         bool get_status(){return status;}
         double get_time();
 
@@ -22,7 +22,7 @@ class Luz{
 
     private:
 
-        int plot_ident = 0; // Number of plot
+        int ident[2];  // Identifier -> [plot_number, height]
         bool status;        // On/of status
         clock_t last_switch_time;  // Save the last switch time
         const int MINUTOS = 60;
